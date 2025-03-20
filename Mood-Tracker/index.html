@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="container">
+            <div class="Heading">
+                <h1>What’s the emotional forecast today?</h1>
+            </div>
+
+            <div class="moods">
+                <div id="happy" class="button">Happy 😄</div>
+                <div id="sad" class="button">Sad 😔</div>
+                <div id="angry" class="button">Angry 😡</div>
+                <div id="neutral" class="button">Neutral 😐</div>
+                <div id="excited" class="button">Excited 😝</div>
+            </div>
+
+            <button id="delete-logs" class="button">Delete all logs</button>
+
+            <div class="cards">
+
+                <div class="card" id="confirmation-card">
+                    <div class="commands">
+                        <h2>Are you sure you want to delete all logs?</h2>
+                        <div class="execute-buttons">
+                            <button id="confirm" class="button">Clear Logs!</button>
+                            <button id="Cancel" class="button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert-card">
+                    <p>Your logs are cleared!</p>
+                </div>  
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
