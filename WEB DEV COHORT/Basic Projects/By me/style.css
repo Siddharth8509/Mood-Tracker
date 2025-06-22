@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;  /* Updated Font */
+}
+
+/* Navbar */
+.navbar
+{
+    width: 100vw;
+    height: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa; 
+    padding: 0 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading Container */
+.Heading-container
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo */
+.logo img
+{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Logo Hover Effect */
+.logo img:hover
+{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Content Container */
+.Content-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Search Bar */
+.search-input
+{
+    width: 250px;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background: url('search-icon.png') no-repeat 12px center;
+    background-size: 30px;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+/* Search Bar Hover & Focus */
+.search-input:hover, .search-input:focus
+{
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+    background-color: white;
+}
+
+/* Toggle Container */
+.toggle-container
+{
+    border: 1px solid #ddd;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 4px;
+    background: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Grid & List Icons */
+.grid, .list
+{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Grid & List Hover Effect */
+.grid:hover, .list:hover
+{
+    background: rgba(0, 123, 255, 0.1);
+    transform: scale(1.1);
+}
+
+/* Grid & List Image */
+.grid img, .list img
+{
+    height: 20px;
+    width: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Divider */
+hr
+{
+    border: none;
+    width: 1px;
+    height: 25px;
+    background: #ccc;
+}
+
+/* Arrange Menu */
+.arrange-menu
+{
+    padding: 10px;
+    position: relative;
+}
+
+/* Arrange Menu Selector */
+.arrange-menu-selector
+{
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
